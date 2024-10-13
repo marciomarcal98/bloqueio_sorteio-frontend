@@ -45,7 +45,7 @@ export function Home() {
       const response = await axios.get(`${VITE_API_URL}?turma=${turma}`)
       setAlunos(response.data)
     } catch(err) {
-      setError(err.message)
+      console.log(err)
     } finally {
       setLoading(false)
     }

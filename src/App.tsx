@@ -1,6 +1,3 @@
-import axios from "axios"
-import { Button } from "@/components/ui/button"
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Home } from "./pages/Home"
 import { Removidos } from "./pages/Removidos"
