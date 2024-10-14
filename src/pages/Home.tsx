@@ -76,7 +76,7 @@ export function Home() {
       <Header />
 
       <main className="p-4">
-        <h1 className="font-bold text-xl mb-5">Bloquear Alunos</h1>
+        <h1 className="font-bold text-3xl mb-5">Bloquear Alunos</h1>
 
         <section className="mb-5">
           <p className="mb-3">Pesquisar pela turma:</p>
