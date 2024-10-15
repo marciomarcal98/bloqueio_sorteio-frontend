@@ -23,6 +23,11 @@ export function Header() {
                             Ver bloqueados  
                         </Link>
                     </NavigationMenuItem>
+                    <NavigationMenuItem>
+                        <Link to="/totalbloqueados" className={navigationMenuTriggerStyle()}>
+                            Total
+                        </Link>
+                    </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
         </header>

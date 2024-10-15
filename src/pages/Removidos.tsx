@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Button } from "@/components/ui/button";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -34,6 +35,23 @@ export function Removidos() {
         buscarAlunosBloqueados()
     }, [])
 
+    async function guardarBloqueados() {
+        try {
+            await axios.post(`${VITE_API_URL}/guardarbloqueios`)
+            alert("Bloqueios guardados com sucesso!")
+        } catch(err) {
+            console.log(err)
+        }
+    }
+
+    async function desbloquearTodos() {
+        try {
+            await axios.post(`${VITE_API_URL}/desbloqueiogeral`)
+        } catch(err) {
+            console.log(err)
+        }
+    }
+
     return (
         <>
             <Header />
@@ -55,6 +73,11 @@ export function Removidos() {
                         </ul>
                     </section>
                 ))}
+
+                <div className="flex gap-5 mt-10">
+                    {alunos.length > 0 && <Button onClick={guardarBloqueados}>Guardar Bloqueios</Button>}
+                    <Button onClick={desbloquearTodos}>Desbloquear Todos</Button>
+                </div>
             </main>
         </>
     )
