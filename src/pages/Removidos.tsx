@@ -47,6 +47,7 @@ export function Removidos() {
     async function desbloquearTodos() {
         try {
             await axios.post(`${VITE_API_URL}/desbloqueiogeral`)
+            alert("Todos os alunos foram desbloqueados!");
         } catch(err) {
             console.log(err)
         }
