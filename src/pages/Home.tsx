@@ -89,21 +89,21 @@ export function Home() {
                 <SelectLabel className="text-center">1º ano</SelectLabel>
                 <SelectItem value="TI01MA">TI01MA</SelectItem>
                 <SelectItem value="TI01MB">TI01MB</SelectItem>
-                <SelectItem value="TI01TA">TI01TA</SelectItem>
-                <SelectItem value="TI01TB">TI01TB</SelectItem>
-                <SelectItem value="TI01TC">TI01TC</SelectItem>
+                <SelectItem value="TI01MC">TI01TA</SelectItem>
+                <SelectItem value="TI01TA">TI01TB</SelectItem>
               </SelectGroup>
               <SelectGroup>
                 <SelectLabel className="text-center">2º ano</SelectLabel>
                 <SelectItem value="TI02MA">TI02MA</SelectItem>
                 <SelectItem value="TI02MB">TI02MB</SelectItem>
+                <SelectItem value="TI02MC">TI02TC</SelectItem>
                 <SelectItem value="TI02TA">TI02TA</SelectItem>
                 <SelectItem value="TI02TB">TI02TB</SelectItem>
-                <SelectItem value="TI02TC">TI02TC</SelectItem>
               </SelectGroup>
               <SelectGroup>
                 <SelectLabel className="text-center">3º ano</SelectLabel>
                 <SelectItem value="TI03MA">TI03MA</SelectItem>
+                <SelectItem value="TI03MB">TI03MA</SelectItem>
                 <SelectItem value="TI03TA">TI03TA</SelectItem>
                 <SelectItem value="TI03TB">TI03TB</SelectItem>
                 <SelectItem value="TI03TC">TI03TC</SelectItem>
